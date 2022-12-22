@@ -75,6 +75,34 @@ const Todo2 = () => {
   return (
     <>
       <h3>Interact with 0xc06fdEbA4F7Fa673aCe5E5440ab3d495133EcE7a</h3>
+      {/* 
+<form
+        onSubmit={async (e) => {
+          e.preventDefault();
+          const encodedFn = await contract.methods
+            .set('Pham Viet Hung')
+            .encodeABI();
+          const rawTx = await web3.eth.accounts.signTransaction(
+            {
+              to: '0xc06fdEbA4F7Fa673aCe5E5440ab3d495133EcE7a',
+              data: encodedFn,
+              gas: 2100000,
+            },
+            '2e61cbf0840a99eb7e1140f740abd287d1215e667e44d6b2168b2f33815f27fc'
+          );
+          web3.eth
+            .sendSignedTransaction(rawTx.rawTransaction)
+            .on('receipt', (receipt) => {
+              console.log(receipt);
+            });
+        }}
+      >
+        <input defaultValue={'Pham Viet Hung'} type="text" />
+        <button>Set</button>
+      </form>
+
+*/}
+
       <a
         target="_blank"
         href="https://testnet.bscscan.com/tx/0xcc742b4c4024521e94a4b410e7f190437aae4af06e6e5119468a5618b8da1c7d"
